@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>sonamagarwal1012@gmail.com</contactEmail>
+    <label>demoConnectedApp</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>MIIDpzCCAo8CFDx7wiUHcSiItIhr5x/tKp730/qoMA0GCSqGSIb3DQEBCwUAMIGPMQswCQYDVQQGEwJGSTERMA8GA1UECAwISGVsc2lua2kxDjAMBgNVBAcMBWVzcG9vMRQwEgYDVQQKDAtCYXVlciBNZWRpYTEMMAoGA1UECwwDT0NQMQ4wDAYDVQQDDAVTb25hbTEpMCcGCSqGSIb3DQEJARYac29uYW1hZ2Fyd2FsMTAxMkBnbWFpbC5jb20wHhcNMjExMTA5MTMwMjQ4WhcNMjIxMTA5MTMwMjQ4WjCBjzELMAkGA1UEBhMCRkkxETAPBgNVBAgMCEhlbHNpbmtpMQ4wDAYDVQQHDAVlc3BvbzEUMBIGA1UECgwLQmF1ZXIgTWVkaWExDDAKBgNVBAsMA09DUDEOMAwGA1UEAwwFU29uYW0xKTAnBgkqhkiG9w0BCQEWGnNvbmFtYWdhcndhbDEwMTJAZ21haWwuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4NSLmPSKXJc8uyi0t2g21nA068d9rl3hwKzUVQQEzivkimyuZQbnsiwLaZjWZYBFQSlSHbm3cvt9UoxY5tTsupz6oHqTspwa9D6ASf41LB6GBvj1LADwykFYiAO662y4NWpQuzx/JSvL+jQbXBoxxPjh1uzrAQLSnCV0jDDQb1wdPX0klh3tKe37uNqk5nCbMZzOmKMHXL8YZCmRT86o/rHwy2xLufOx8kcmlbmoGCnSDvEH4pkCcUNFyNwsKffAIyi4CPGwhk7g+536Ju81t3DAUY0gFXJW7BFPMI38F6OufAWq2PBygBVToWTIFWjxGaiNwDV9OPsq3Dc3966UtQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBkE3pSUypd8moYq6EZNa7046sbqXT3sBmHtSTA0UdcPDTZvu+Kig9N3zn53aFMLGh8OJdQJxLHFlnt6iYZ3B8zga90Z/OIDyGq0QFCoAUEucUMyRl+mTKAkYGXF+SlYJko4HV1oHx+XEI+UIJ6nH9qOLYv2+J54pG6dkYXGq7+SQB+v0xQ1Qi+6914FSkdc/QvLxPcAMlXfAXMCG3yMAJEy9e/MDx0mNOFGEeB0l8owvXAfHA6TnY+KpDAJkuKd1CcDHEX8fbpdjmkM6e/gEpRHLwQiCRgoHx42e4q600vpODbbe9ZnsxR5ZWUaHKeS6pUbifUwyCWygHXv1WIPdGZ</certificate>
+        <consumerKey>3MVG9ZL0ppGP5UrDHxH2nD4gF3dJ92wc6.HRqCEPloRfqwcdeedKDHbGf75U1yrXeAJoXfbv5Th_8bnFQqV36</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>
