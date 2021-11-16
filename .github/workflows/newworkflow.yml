@@ -58,7 +58,7 @@ jobs:
               
         
             - name: 'Convert Metadata'
-              run: sfdx force:source:convert —-manifest=package/package.xml  --outputdir=convert
+              run: sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
             - name: 'Run Test on Metadata'
               run: sfdx force:mdapi:deploy --deploydir=convert -u devhub -w30
 
