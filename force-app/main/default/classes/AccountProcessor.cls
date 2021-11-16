@@ -1,6 +1,7 @@
 public class AccountProcessor{
  @future
     public static void countContacts(list<Id> accountIds){
+        //new changes
     list<account> acclstToUpdate = new list<Account>();
     list<Account> accLst = [select id, Number_of_Contacts__c,(select id from contacts) from account where id in :accountIds];
     for(account acc:accLst){
