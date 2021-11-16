@@ -52,7 +52,7 @@ jobs:
                git fetch --all
                git checkout -b ADO111
                git --no-pager diff --name-status ADO111 origin/master
-               sfdx sgd:source:delta --to ADO111 --from origin/master —-repo . --output "."
+               sfdx sgd:source:delta --to ADO111 --from origin/master --output "."
                cat package/package.xml
               
               
