@@ -1,6 +1,7 @@
 @istest
 public class accountInsert {
     public static testmethod void accInsert(){
+        //Needs to check the code delta
         string addError;
         string myName='sonam';
         account a1=new account(name=myName);
