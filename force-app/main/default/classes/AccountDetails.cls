@@ -3,7 +3,7 @@ public class AccountDetails
     @AuraEnabled
     public static ParentWrapper getDetails()
     {
-        //new changes1 sonam
+        //new changes for 18th november
         string parentChild='';
         /*contact objCon=[select id from contact where id in(select contactid from user where id=userInfo.getUserId())];
         account objAcc=[select id,parentid from account where id in(select last_active_account__c from contact where id =:objCon.id)];
