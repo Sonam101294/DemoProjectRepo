@@ -5,17 +5,15 @@ name: CI
 on:
     push:
         branches:
-            - master
+            - dev
         paths-ignore:
             - 'sfdx-project.json'
             - 'README.md'
 
 # Jobs to be executed
 jobs:
-   scratch-org-test:
+   build:
         runs-on: ubuntu-latest
-        
-        
         steps:
             # Checkout the source code
             - name: 'Checkout source code'
@@ -45,14 +43,19 @@ jobs:
             # Authenticate dev hub
             - name: 'Authenticate Dev Hub'
               run: sfdx auth:sfdxurl:store -f ./DEVHUB_SFDX_URL.txt -a devhub -d
-            - name: 'Install app and create. delta'
+               
+   deploy_to_dev:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+            - name: 'Install app and create delta'
               run: |
                echo y | sfdx plugins:install sfdx-git-delta
                git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
                git fetch --all
                git checkout -b pr
-               git --no-pager diff --name-status pr origin/master
-               sfdx sgd:source:delta --to pr --from origin/master --output "."
+               git --no-pager diff --name-status pr origin/dev
+               sfdx sgd:source:delta --to pr --from origin/dev --output "."
                cat package/package.xml
               
               
